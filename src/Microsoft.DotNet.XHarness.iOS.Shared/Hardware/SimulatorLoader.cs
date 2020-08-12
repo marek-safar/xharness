@@ -72,7 +72,7 @@ namespace Microsoft.DotNet.XHarness.iOS.Shared.Hardware
                     arguments.Add(new VerbosityArgument());
                 }
 
-                var result = await _processManager.ExecuteCommandAsync(arguments, log, timeout: TimeSpan.FromMinutes(1));
+                var result = await _processManager.ExecuteCommandAsync(arguments, log, timeout: TimeSpan.FromMinutes(3));
 
                 if (!result.Succeeded)
                 {
